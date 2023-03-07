@@ -65,7 +65,7 @@ class _ProfilePageState extends State<ProfilePage> {
               padding: const EdgeInsets.only(left: 16, bottom: 16),
               child: ListTile(
                 leading: const CircleAvatar(
-                  foregroundImage: AssetImage("assets/images/emailperson.png"),
+                  foregroundImage: AssetImage("assets/images/emailPerson.png"),
                 ),
                 title: Text(
                   "Jane Coper",
@@ -81,6 +81,7 @@ class _ProfilePageState extends State<ProfilePage> {
             ListView.builder(
               itemCount: 10,
               shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
               itemBuilder: (BuildContext context, int index) {
                 if (index == 4 || index == 6) {
                   return Column(

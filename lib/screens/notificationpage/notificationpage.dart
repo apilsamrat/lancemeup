@@ -152,7 +152,7 @@ class _NotificationPageState extends State<NotificationPage> {
 
       //5
       NotificationTileData(
-          notificationType: NotificationType.download,
+          notificationType: NotificationType.rejection,
           isOnline: true,
           title: Text.rich(TextSpan(children: [
             TextSpan(
@@ -189,65 +189,6 @@ class _NotificationPageState extends State<NotificationPage> {
           ])),
           time: "2m ago",
           onClick: () {}),
-      NotificationTileData(
-          notificationType: NotificationType.download,
-          isOnline: false,
-          title: Text.rich(TextSpan(children: [
-            TextSpan(
-                text: "Jane Copper ",
-                style: primaryTextStyle.copyWith(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w500,
-                )),
-            TextSpan(
-                text: "accept the invitation from workspace ",
-                style: primaryTextStyle.copyWith(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w400,
-                )),
-          ])),
-          time: "2m ago",
-          onClick: () {}),
-      NotificationTileData(
-          notificationType: NotificationType.download,
-          isOnline: true,
-          title: Text.rich(TextSpan(children: [
-            TextSpan(
-                text: "Jane Copper ",
-                style: primaryTextStyle.copyWith(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w500,
-                )),
-            TextSpan(
-                text: "accept the invitation from workspace ",
-                style: primaryTextStyle.copyWith(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w400,
-                )),
-          ])),
-          time: "2m ago",
-          onClick: () {}),
-      NotificationTileData(
-          notificationType: NotificationType.download,
-          isOnline: true,
-          title: Text.rich(TextSpan(children: [
-            TextSpan(
-                text: "Jane Copper ",
-                style: primaryTextStyle.copyWith(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w500,
-                )),
-            TextSpan(
-                text: "accept the invitation from workspace ",
-                style: primaryTextStyle.copyWith(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w400,
-                )),
-          ])),
-          time: "2m ago",
-          onClick: () {
-            
-          }),
     ];
 
     super.initState();
