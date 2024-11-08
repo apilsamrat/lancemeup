@@ -115,6 +115,24 @@ class _EmailPageState extends State<EmailPage> {
                     fileType: FileType.image, name: "Image_file.zip"),
                 time: "8:00 AM",
               ),
+              const EmailTile(
+                favorite: true,
+                heading: "Unread email & starred",
+                content:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean.",
+                important: false,
+                seen: false,
+                time: "Dec 19",
+              ),
+              const EmailTile(
+                favorite: false,
+                heading: "Important Email",
+                content:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean.",
+                important: true,
+                seen: true,
+                time: "Dec 18",
+              ),
             ],
           ),
         ),

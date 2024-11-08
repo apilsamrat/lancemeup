@@ -30,75 +30,77 @@ class _SigninPageState extends State<SigninPage> {
         alignment: Alignment.topLeft,
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
         child: Form(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text("Welcome Back!", style: headingStyle),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(0, 4, 0, 24),
-                child: Text("Login to your account", style: bodytextStyle),
-              ),
-              Text(
-                "Email",
-                style: primaryTextStyle,
-              ),
-              const SizedBox(height: 4),
-              TextFormField(
-                style: primaryTextStyle,
-                decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.all(12),
-                    border: OutlineInputBorder(),
-                    hintText: "janecopper@gmail.com"),
-              ),
-              const SizedBox(height: 24),
-              Text(
-                "Password",
-                style: primaryTextStyle,
-              ),
-              const SizedBox(height: 4),
-              TextFormField(
-                style: primaryTextStyle,
-                obscureText: obsurePass,
-                decoration: InputDecoration(
-                    contentPadding: const EdgeInsets.all(12),
-                    border: const OutlineInputBorder(),
-                    hintText: "***************",
-                    suffixIcon: IconButton(
-                        onPressed: () {
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text("Welcome Back!", style: headingStyle),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(0, 4, 0, 24),
+                  child: Text("Login to your account", style: bodytextStyle),
+                ),
+                Text(
+                  "Email",
+                  style: primaryTextStyle,
+                ),
+                const SizedBox(height: 4),
+                TextFormField(
+                  style: primaryTextStyle,
+                  decoration: const InputDecoration(
+                      contentPadding: EdgeInsets.all(12),
+                      border: OutlineInputBorder(),
+                      hintText: "janecopper@gmail.com"),
+                ),
+                const SizedBox(height: 24),
+                Text(
+                  "Password",
+                  style: primaryTextStyle,
+                ),
+                const SizedBox(height: 4),
+                TextFormField(
+                  style: primaryTextStyle,
+                  obscureText: obsurePass,
+                  decoration: InputDecoration(
+                      contentPadding: const EdgeInsets.all(12),
+                      border: const OutlineInputBorder(),
+                      hintText: "***************",
+                      suffixIcon: IconButton(
+                          onPressed: () {
+                            setState(() {
+                              obsurePass = !obsurePass;
+                            });
+                          },
+                          icon: Icon(obsurePass
+                              ? Icons.visibility_off_outlined
+                              : Icons.visibility_outlined))),
+                ),
+                const SizedBox(height: 24),
+                Row(
+                  children: [
+                    Flexible(
+                      child: CheckboxListTile(
+                        value: rememberMe,
+                        onChanged: (value) {
                           setState(() {
-                            obsurePass = !obsurePass;
+                            rememberMe = !rememberMe;
                           });
                         },
-                        icon: Icon(obsurePass
-                            ? Icons.visibility_off_outlined
-                            : Icons.visibility_outlined))),
-              ),
-              const SizedBox(height: 24),
-              Row(
-                children: [
-                  Flexible(
-                    child: CheckboxListTile(
-                      value: rememberMe,
-                      onChanged: (value) {
-                        setState(() {
-                          rememberMe = !rememberMe;
-                        });
-                      },
-                      controlAffinity: ListTileControlAffinity.leading,
-                      title: Text(
-                        "Remember me",
-                        style: primaryTextStyle.copyWith(
-                            fontWeight: FontWeight.w500, fontSize: 14),
+                        controlAffinity: ListTileControlAffinity.leading,
+                        title: Text(
+                          "Remember me",
+                          style: primaryTextStyle.copyWith(
+                              fontWeight: FontWeight.w500, fontSize: 14),
+                        ),
                       ),
                     ),
-                  ),
-                  TextButton(
-                      onPressed: () {},
-                      style: primaryTransparentButtonStyle,
-                      child: const Text("Forgot Password?")),
-                ],
-              ),
-            ],
+                    TextButton(
+                        onPressed: () {},
+                        style: primaryTransparentButtonStyle,
+                        child: const Text("Forgot Password?")),
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),

@@ -48,15 +48,24 @@ class AppWalkThroughState extends State<AppWalkThrough> {
                 ),
                 ReuseableWidget(
                   color: bgColor,
-                  child: Image.asset("assets/images/logo.png"),
+                  child: Image.asset(
+                    "assets/images/icon_transparent.png",
+                    width: 150,
+                  ),
                 ),
                 ReuseableWidget(
                   color: bgColor,
-                  child: Image.asset("assets/images/logo.png"),
+                  child: Image.asset(
+                    "assets/images/icon_transparent.png",
+                    width: 150,
+                  ),
                 ),
                 ReuseableWidget(
                   color: bgColor,
-                  child: Image.asset("assets/images/logo.png"),
+                  child: Image.asset(
+                    "assets/images/icon_transparent.png",
+                    width: 150,
+                  ),
                 ),
               ],
             ),

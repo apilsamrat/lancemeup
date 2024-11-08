@@ -104,30 +104,31 @@ class _NotificationPageState extends State<NotificationPage> {
 
       //3
       NotificationTileData(
-          notificationType: NotificationType.reminder,
-          isOnline: false,
-          title: Text.rich(TextSpan(children: [
-            TextSpan(
-                text: "[REMINDER] Due date of ",
-                style: primaryTextStyle.copyWith(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w400,
-                )),
-            TextSpan(
-                text: "Lancemeup Projects ",
-                style: primaryTextStyle.copyWith(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w500,
-                )),
-            TextSpan(
-                text: "task will be comming  ",
-                style: primaryTextStyle.copyWith(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w400,
-                )),
-          ])),
-          time: "2m ago",
-          onClick: () {}),
+        notificationType: NotificationType.reminder,
+        isOnline: false,
+        title: Text.rich(TextSpan(children: [
+          TextSpan(
+              text: "[REMINDER] Due date of ",
+              style: primaryTextStyle.copyWith(
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
+              )),
+          TextSpan(
+              text: "Lancemeup Projects ",
+              style: primaryTextStyle.copyWith(
+                fontSize: 14,
+                fontWeight: FontWeight.w500,
+              )),
+          TextSpan(
+              text: "task will be comming  ",
+              style: primaryTextStyle.copyWith(
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
+              )),
+        ])),
+        time: "2m ago",
+        onClick: () {},
+      ),
 
       //4
       NotificationTileData(
@@ -182,6 +183,55 @@ class _NotificationPageState extends State<NotificationPage> {
                 )),
             TextSpan(
                 text: "accept the invitation from workspace ",
+                style: primaryTextStyle.copyWith(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w400,
+                )),
+          ])),
+          time: "2m ago",
+          onClick: () {}),
+
+      //6
+      NotificationTileData(
+        notificationType: NotificationType.reminder,
+        isOnline: false,
+        title: Text.rich(TextSpan(children: [
+          TextSpan(
+              text: "[REMINDER] Due date of ",
+              style: primaryTextStyle.copyWith(
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
+              )),
+          TextSpan(
+              text: "Lancemeup Projects ",
+              style: primaryTextStyle.copyWith(
+                fontSize: 14,
+                fontWeight: FontWeight.w500,
+              )),
+          TextSpan(
+              text: "task will be comming  ",
+              style: primaryTextStyle.copyWith(
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
+              )),
+        ])),
+        time: "2m ago",
+        onClick: () {},
+      ),
+
+      //7
+      NotificationTileData(
+          notificationType: NotificationType.removed,
+          isOnline: false,
+          title: Text.rich(TextSpan(children: [
+            TextSpan(
+                text: "Jane Copper ",
+                style: primaryTextStyle.copyWith(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w500,
+                )),
+            TextSpan(
+                text: "has removed from workspace ",
                 style: primaryTextStyle.copyWith(
                   fontSize: 14,
                   fontWeight: FontWeight.w400,

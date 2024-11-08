@@ -1,4 +1,4 @@
-package com.example.lancemeup
+package com.aprilsunmedia.lanceupui
 
 import io.flutter.embedding.android.FlutterActivity
 
